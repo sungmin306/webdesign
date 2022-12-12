@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+}
+hr{
+    border: solid 2px gray;        
+}
+a{
+    text-decoration : none;
+}
+#main{
+    height: 120vh;
+    text-align: left; 
+    background-image:url('메인/main.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+#main h1{
+    color: white; 
+    padding: 30px;
+    padding-left: 30px;
+    font-size: 400%;
+    text-decoration : none;
+    margin:0;    
+}
+
+#main img{
+    padding: 20px;    
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-bottom: 0;
+    width:800px; 
+    height:600px;    
+    float: left;
+}
+#main span{
+    font-size: 500%;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+img{
+    width:400px; 
+    height:400px;    
+}
+
+section h1{
+    font-size: 200%;
+    padding-left: 30px;
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table, td, th {
+    border-collapse : collapse;
+    border : 2px solid white;
+    padding: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+
+table span{
+    font-size: 40px;   
+    font-style : italic; 
+    color:black; 
+    font-weight: 600;    
+}
+
+table a img {
+    object-fit:cover;     
+    transform:scale(1.0);      
+    transition: transform .5s;      
+}
+
+table a:hover img {
+    transform:scale(1.05);            /* 이미지 확대 */    
+}
+footer h1{
+    font-size: 200%;
+    padding-left: 30px;
+}
+
+@media(max-width:1530px){
+    section table td{
+        display: block;
+        padding-left: 0;
+    }
+    section table img{
+        width: 700px;
+    }
+}
+@media(max-width:1015px){
+    footer table td{
+        display: block;
+        padding-left: 0;
+    }
+    footer table img{
+        width: 500px;
+    }
+}
+@media(max-width:1480px){
+    #main span{
+        font-size: 400%;
+    }
+}
+@media(max-width:1375px){
+    #main img{
+        float: none;
+    }
+    #main span div{
+        display: inline-block;
+        padding-right: 30px;
+        font-size: 100%;
+    }
+}
+@media(max-width:1080px){
+    #main span div{
+        display: none;
+    }
+    #main div{
+        display: none;
+    }
+}
